@@ -53,3 +53,32 @@ class ViewController: UIViewController {
     }
 }
 
+
+
+// 改善点
+
+// 四捨五入する場合
+//String(format: "%.2f", doubleNum1 / doubleNum2)
+// 四捨五入しない場合
+//String(format: "%.2f", floor(doubleNum1 / doubleNum2 * 100) / 100)
+
+// 解答例
+
+//switch segmentedControl.selectedSegmentIndex, doubleNum2 {
+//case (0, _):
+//    answerLabel.text = "\(intNum1 + intNum2)"
+//case (1, _):
+//    answerLabel.text = "\(intNum1 - intNum2)"
+//case (2, _):
+//    answerLabel.text = "\(intNum1 * intNum2)"
+//case (3, 0):
+//    answerLabel.text = "割る数には0以外を入力してください"
+//case (3, _):
+//    answerLabel.text = "\(intNum1 / intNum2)"
+//    }
+//default:
+//    fatalError("計算できません")
+//}
+
+// 参考
+//let nums = [self.textField1, self.textField2].map{Int($0.text ?? "") ?? 0}
